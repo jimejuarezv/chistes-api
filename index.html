@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chistes</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chistes</h1>
+        
+        <label for="type">Tipo:</label>
+        <select id="type">
+            <option value="single">Único</option>
+            <option value="twopart">Dos Partes</option>
+        </select>
+
+        <label for="category">Categoría:</label>
+        <select id="category">
+            <option value="Programming">Programación</option>
+            <option value="Miscellaneous">Misceláneo</option>
+            <option value="Dark">Oscuro</option>
+            <option value="Christmas">Navidad</option>
+        </select>
+
+        <label for="lang">Idioma:</label>
+        <select id="lang">
+            <option value="en">Inglés</option>
+            <option value="es">Español</option>
+            <option value="de">Alemán</option>
+            <option value="fr">Francés</option>
+            <option value="it">Italiano</option>
+            <option value="nl">Neerlandés</option>
+            <option value="pl">Polaco</option>
+            <option value="pt">Portugués</option>
+            <option value="ru">Ruso</option>
+            <option value="ja">Japonés</option>
+            <option value="zh">Chino</option>
+        </select>
+
+        <div>
+            <label><input type="checkbox" id="blacklistReligion"> Excluir Religión</label>
+            <label><input type="checkbox" id="blacklistPolitics"> Excluir Política</label>
+            <label><input type="checkbox" id="blacklistSex"> Excluir Sexo</label>
+            <label><input type="checkbox" id="blacklistDrugs"> Excluir Drogas</label>
+            <label><input type="checkbox" id="blacklistExplicit"> Excluir Contenido Explícito</label>
+        </div>
+
+        <button id="getJoke">Obtener un Chiste</button>
+        <button id="translateJoke">Traducir al Español</button>
+        <p id="joke"></p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
